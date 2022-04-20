@@ -1,0 +1,280 @@
+*{ 
+margin: 0;
+padding: 0;
+box-sizing: border-box; /* fazer com que o elemento obedeça o tamanho do container em que foi criado*/
+
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*Mudar o tipo de letra*/
+    background-color:#fff;
+}
+#cabecalho {
+    background-color:#0d77f0;
+    display:flex;
+    justify-content:space-between; /*alinhando os elementos na horizontal*/
+    padding: 5px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+#area-logo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    align-items: center; /*alinahndo elementos na vertical*/
+    margin-right: 9px;
+    margin-top: 18px;
+}
+#logotipo{
+    width: 50%;
+    height: 50%;
+}
+#menu li{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight:bold; 
+}
+#menu a{
+    cursor: pointer; /*mudando o cursor para mão*/
+    text-decoration: none;
+    color:#fff;
+    transition: all 0.5s; /* permite saber como as transições vão ocorrer, animações e transições no elemento (o tempo)*/
+    
+}
+
+/*Estilização ao passar o cursor no elemento, disparando o evento hover*/
+
+#menu a:hover{
+    color:#fff;
+     font-size: 19px; }
+
+     
+
+#banner{
+    width: 100%;
+    height:60%;
+    text-align: center;
+}
+
+#banner img{
+    width: 100%;
+}
+#main{
+    text-align: center;
+ }
+#main-intro{
+    margin-top: 30px;
+    padding: 30px;
+    text-align:center; 
+}
+
+#intro h1{
+    justify-content:center;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px
+
+}
+
+#intro h2{
+    justify-content:center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+   
+ }
+#intro p{
+    margin-top:10px;
+    justify-content:center;
+    cursor: pointer;
+    text-align: left;
+    color: #222;
+    margin-left: 40px;
+    font-weight:bold; 
+ 
+}
+
+
+/* ESTILIZANDO O CARTÃO DOS SERVIÇOS e área dos serviços*/
+
+#area-serviços{
+    margin-left: 80px;
+    padding: 20px;
+    width: 100%;
+    display: flex; /* para usar as propriedades do flexbox*/
+    flex-direction: row;/* flex-direction: mexe na orientação dos elementos filhos, ou seja, horizontal ou vertical, ou linha ou coluna*/
+    flex-wrap: wrap; /* flex-wrap: define se o elemento vai ser multilinha ou não, ou , se vai quebrar ou não*/
+}
+
+.quiz{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+    
+}
+
+#e{
+
+    border-radius:26px;
+    display:grid;
+    padding: 80px;
+}
+
+#i{
+border-radius: 10px;
+background-color:aliceblue;
+border-color: black;
+font-weight:bold; 
+}
+
+
+#j{
+    border-radius: 10px;
+    background-color: #fff;
+    border-color: black;
+    font-weight:bold; 
+    }
+
+
+#k{
+    border-radius:10px;
+    background-color:  aliceblue;
+    border-color: black;
+    font-weight:bold; 
+        }
+#l{
+
+border-radius: 10px;
+background-color:  #fff;
+border-color: black;
+text-align: left;
+font-weight:bold; 
+}
+
+ #m{
+ border-radius: 10px;
+ background-color:  aliceblue;
+ border-color: black;
+ font-weight:bold; 
+ }
+
+
+#t{
+margin-left: 30px;
+}
+
+#b{
+margin-top: 20px;
+margin-left: 30px; }
+
+                
+.Serviços{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    text-align: left;
+    width: 330px;
+    border-radius: 16px;
+}
+.Serviços img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+            /* c.esq c.dir b.esq b.dir  */
+
+}
+.Serviços .conteudo{
+    padding: 20px;
+}
+.Serviços .conteudo p{
+    font-size: 14px;
+    color:#fff;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+
+    .intro .textos h1{
+        justify-content: center;
+        }
+
+
+    footer{
+        background-color: #222;
+        padding: 30px;
+        margin-top: 100px;
+        color: #fff;
+        text-align: center; /* alinhar o texto ao centro*/
+    }
+
+    #efeitos{
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #efeitos input{
+        z-index: 2;
+        margin-left: 25px;
+        margin-top: 30px;
+        padding: 8px;
+        font-size: 16px;
+        color: rgb(36, 32, 32);
+    }
+    #efeitos input[type="button"]{
+        cursor: pointer;
+        border-radius: 3px;
+        background-color: #222;
+        color:rgb(14, 190, 243);
+        transition: all 0.5s;
+    }
+    #efeitos input[type="button"]:hover{
+    
+        border: 3px solid #222;
+        background-color: #222;
+        color:red;
+        }
+
+        #img-banner{
+            margin:0 auto;
+            transition:all 0.5s;
+            z-index:1; /*mexer com as camadas dos elementos*/
+        }
+    
+ .card{
+     margin-top: 30px;
+ }   
+ 
+ .img{
+     width: 22rem;
+ }
+
+ .paragrafos{
+     padding: 31px;
+     text-align: justify;
+ }
+
+ .contact{
+     width: 50%;
+ }
+
+
+ 
+      
+ @media (max-width:900px) {
+   #menu {
+     display: none !important;
+   }
+   .menu-phone {
+     display: block !important;
+     z-index: 999;
+   }
+ }

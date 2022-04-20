@@ -1,0 +1,268 @@
+
+
+
+
+}
+#banner{
+    width: 100%;
+    height:60%;
+    text-align: center;
+}
+
+#banner img{
+    width: 100%;
+}
+#main{
+    text-align: center;
+    color: brown;
+}
+
+#main-intro{
+    margin-top: 30px;
+    padding: 30px;
+    color: blue;
+}
+#intro h1{
+    justify-content:center;
+    cursor: pointer;
+
+    
+}
+
+#intro p{
+    margin-top:30px;
+    justify-content:center;
+    cursor: pointer;
+ 
+}
+
+/* ESTILIZANDO O CARTÃO DOS SERVIÇOS e área dos serviços*/
+
+#area-serviços{
+    padding: 20px;
+    width: 100%;
+    display: flex; /* para usar as propriedades do flexbox*/
+    flex-direction: row;/* flex-direction: mexe na orientação dos elementos filhos, ou seja, horizontal ou vertical, ou linha ou coluna*/
+    flex-wrap: wrap; /* flex-wrap: define se o elemento vai ser multilinha ou não, ou , se vai quebrar ou não*/
+}
+.Serviços{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    text-align: left;
+    width: 330px;
+    border-radius: 16px;
+}
+.Serviços img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+            /* c.esq c.dir b.esq b.dir  */
+
+}
+.Serviços .conteudo{
+    padding: 20px;
+}
+.Serviços .conteudo p{
+    font-size: 14px;
+    color:#fff;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+    .Serviços .conteudo h4{
+        margin-bottom: 12px;
+        background-color:#222;
+        width: 120px;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 30px;
+        color:rgb(14, 190, 243);
+    }
+
+    .intro .textos h1{
+        justify-content: center;
+        }
+
+    footer{
+        background-color: #222;
+        padding: 30px;
+        margin-top: 100px;
+        color: #fff;
+        text-align: center; /* alinhar o texto ao centro*/
+    }
+
+    #efeitos{
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #efeitos input{
+        z-index: 2;
+        margin-left: 25px;
+        margin-top: 30px;
+        padding: 8px;
+        font-size: 16px;
+        color: rgb(36, 32, 32);
+    }
+    #efeitos input[type="button"]{
+        cursor: pointer;
+        border-radius: 3px;
+        background-color: #222;
+        color:rgb(14, 190, 243);
+        transition: all 0.5s;
+    }
+    #efeitos input[type="button"]:hover{
+    
+        border: 3px solid #222;
+        background-color: #222;
+        color:red;
+        }
+
+        #img-banner{
+            margin:0 auto;
+            transition:all 0.5s;
+            z-index:1; /*mexer com as camadas dos elementos*/
+        }
+        /*Classe doos efeitos*/
+    .rodar{
+        transform:rotate(190deg);
+
+    }
+    .arredondar{
+        border-radius: 50%;
+        width: 500px !important;
+        height: 500px !important;
+    }
+
+    .mover{
+        transform:translate(200px);
+    }
+
+    .distorcer{
+        transform: skew(50deg);
+    }
+
+    .ampliar{
+        transform:scale(2);
+        
+    }
+
+
+
+
+
+
+<div class="content">
+</div>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Inicio</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Sobre nós</h5>
+                    <ul>
+                        <li><a href="#">Informações da Empresa</a></li>
+                        <li><a href="#">contactos</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Suporte</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Telefones</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info">
+                  <img src="img/logo IMAGEM DA PÁG.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="second-bar">
+           <div class="container">
+                <div class="social-icons">
+                    <a href="https://facebook.com/garaujotech class=" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://instagram.com/garaujogaa" class="instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    index-cards
+
+    <div class="Serviços" id="cartao de teste">
+            <img src="img/visor.png" alt="visor">
+
+            <div class="conteudo">
+                <h4 class="formato">Reparação de iPhones</h4>
+                <h1>Substituição de Visores</h1>
+                <p>Saiba mais sobre os passos e cuidados a ter em conta neste processo</p>
+            </div>
+
+        </div>
+
+        <div class="Serviços">
+            <img src="img/bateria.iphone.png" alt="bateria">
+
+            <div class="conteudo">
+                <h4 class="formato">Reparação de iPhones</h4>
+                <h1>Substituição de Bateria</h1>
+                <p>Saiba mais sobre os passos e cuidados a ter em conta neste processo</p>
+            </div>
+
+        </div>
+
+        <div class="Serviços">
+            <img src="img/camera.png" alt="camera" >
+
+            <div class="conteudo">
+                <h4 class="formato">Reparação de iPhones</h4>
+                <h1>Substituição de Câmeras</h1>
+                <p>Saiba mais sobre os passos e cuidados a ter em conta neste processo</p>
+            </div>
+
+        </div>
+
+        <div class="Serviços">
+            <img src="img/vidro.png" alt="vidro">
+
+            <div class="conteudo">
+                <h4 class="formato">Reparação de iPhones</h4>
+                <h1>Substituição do Vidro Traseiro</h1>
+                <p>Saiba mais sobre os passos e cuidados a ter em conta neste processo</p>
+            </div>
+
+        </div>
+
+        <div class="Serviços">
+            <img src="img/vi-mac.png" alt="gaa1" >
+
+            <div class="conteudo">
+                <h4 class="formato">Reparação de iPhones</h4>
+                <h1>Substituição de Tela Display de MacBook</h1>
+                <p>Saiba mais sobre os passos e cuidados a ter em conta neste processo</p>
+            </div>
+
+        </div>
+
+        <div class="Serviços">
+            <img src="img/bat-m.png" alt="Bateria de MacBook">
+
+            <div class="conteudo">
+                <h4 class="formato">Reparação de iPhones</h4>
+                <h1>Substituição de Bateria de MacBook</h1>
+                <p>Saiba mais sobre os passos e cuidados a ter em conta neste processo</p>
+            </div>
+
+        </div>

@@ -1,0 +1,27 @@
+
+
+
+input{
+    margin-top: 30px;
+    padding: 8px;
+    font-size: 16px;
+    color: rgb(36, 32, 32);
+}
+input[type="button"]{
+    cursor: pointer;
+    border: 3px solid #222;
+    background-color: #0dcaf0;
+    color:#222;
+    transition: all 0.5s;
+}
+input[type="button"]:hover{
+
+    border: 3px #0dcaf0;
+    background-color: #222;
+    color:red; 
+}
+
+#q{
+     margin-left: 40px;
+    font-weight:bold; 
+ }

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>GAraTech</title>
+
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/contactos.css">
+    <link rel="stylesheet" href="style/footer-white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<header id="cabecalho">
+    <div id="area-logo">
+
+        <a href="index.html">
+            <img src="img/logo.png"  alt="logotipo" id="logotipo">
+
+        </a>
+    </div>
+
+
+
+    <nav class="navbar navbar-light bg-primary">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand"> </a>
+        
+        </div>
+
+        <nav id="menu">
+            <ul>
+              <li> <a href="index.html" class="social-icons"> <i class="fa fa-home"></i> &nbsp; Home </a></li>
+                <li> <a href="Serviços.html"> Produtos & Serviços </a></li>
+                <li> <a href="Orçamento.html"> Estime o seu orçamento</a></li>
+                <li> <a href="Contactos.html"> Contactos</a></li>
+            </ul>
+            
+        </nav>
+      </nav>
+</header>
+
+
+    <main>
+      
+    
+
+
+    </main>
+
+  
+
+<div class="contact float:right;">
+<form class="row g-3">
+    <div class="col-md-12">
+      <section id="f">
+        <div>
+            <h3>Solicite um serviço ao domicílio preenchendo o seguinte formulário</h3>
+        </div>
+    </section>
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+   
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Endereço</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Endereço Secundário</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="">
+    </div>
+   
+    <div class="col-md-12">
+      <label for="inputState" class="form-label">Província</label>
+      <select id="inputState" class="form-select" onchange="cidades(value)">
+        <option selected>Selecione</option>
+        <option>Bengo</option>
+        <option>Benguela</option>
+        <option>Bié</option>
+        <option>Cabinda</option>
+        <option>Cuando-Cubango</option>
+        <option>Cuanza-Sul</option>
+        <option>Cuanza-Norte</option>
+        <option>Cunene</option>
+        <option>Huambo</option>
+        <option>Huíla</option>
+        <option>Luanda</option>
+        <option>Lunda-Sul</option>
+        <option>Lunda-Norte</option>
+        <option>Malange</option>
+        <option>Moxico</option>
+        <option>Namibe</option>
+        <option>Uíge</option>
+        <option>Zaire</option>
+      </select>
+    </div>
+      <div class="col-md-12" id="cities">
+
+      </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Escreva aqui a solicitação do serviço que pretende" id="floatingTextarea"> </textarea>
+            <label for="floatingTextarea">Escreva aqui o serviço que pretende solicitar</label>
+          </div>
+
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+
+  </form>
+
+  
+</div>
+
+
+
+
+
+
+
+<div class="content">
+</div>
+<footer id="myFooter">
+  <div class="container">
+      <ul>
+          <li><a href="index.html">Página Inicia</a>l</li>
+          <li><a href="Contactos.html">About Us</a></li>
+          <li><a href="Contactos.html">Contacto Para Serviços Extras</a></li>
+          <li>Linha de Atendimento Técnico: +244 932174185</li>
+          <li>E-mail: garaujo601@icloud.com</li>
+          
+      </ul>
+      <p class="footer-copyright"> © 2022 | GAraTech </p>
+  </div>
+  <div class="footer-social">
+    <a href="https://facebook.com/garaujotech" class="social-icons"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com/garaujogaa" class="social-icons"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtube.com/channel/UCSeYRbcFrrxuf-pT6K5zOhg" class=""><i class="fa fa-youtube"></i></a>
+        <a href="https://twitter.com/GAra_first" class=""><i class="fa fa-twitter"></i></a>
+  </div>
+</footer>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</body>
+
+<script> 
+  function cidades(c) {
+    var bengo = [ "Ambriz", "Bula Atumba", "Dande", "Dembos", "Nambuangongo","Pango Aluquém"];
+    var benguela = ["lobito","benguela","catumbela"];
+    var bie = ["andulo","camacupa","nharea"];
+
+    if( c == "Bengo" ) {
+      document.getElementById("cities").innerHTML = 
+        
+  
+        "<select class='form-select'><option>Selecione a cidade</option><option>Ambriz</option><option>Bula Atumba</option><option>Dande</option> <option>Dembos</option><option>Nambuangongo</option><option>Pango Aluquém</option></select>";
+    }
+ 
+    if( c == "Benguela" ) {
+      document.getElementById("cities").innerHTML = 
+        "<select class='form-select'><option>Selecione a cidade</option><option>Baía Farta</option><option>Boalombo</option><option>Benguela</option> <option>Bocoio</option><option>Caimbambo</option><option>Catumbela</option> <option>Chongoroi</option> <option>Cubal</option><option>Ganda</option> <option>Lobito</option></select>";
+    }
+
+  }
+</script>
+
+
+</html>
