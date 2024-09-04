@@ -7,7 +7,7 @@ box-sizing: border-box; /* fazer com que o elemento obedeça o tamanho do contai
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*Mudar o tipo de letra*/
-    background-color:#fff;
+    background-color:#black;
 }
 #cabecalho {
     background-color:#0d77f0;
