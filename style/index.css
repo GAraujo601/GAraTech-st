@@ -10,7 +10,7 @@ body {
     background-color:#fff;
 }
 #cabecalho {
-    background-color:#0d77f0;
+    background-color:#red;
     display:flex;
     justify-content:space-between; /*alinhando os elementos na horizontal*/
     padding: 5px;
